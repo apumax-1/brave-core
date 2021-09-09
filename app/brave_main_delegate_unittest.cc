@@ -13,7 +13,7 @@
 
 namespace brave_component_updater {
 
-TEST(BraveComponentUpdaterUnitTest, TestGetUpdateHost) {
+TEST(BraveMainDelegateUnitTest, TestGetUpdateHost) {
   base::test::ScopedFeatureList feature_list;
 
   base::CommandLine& command_line = *base::CommandLine::ForCurrentProcess();

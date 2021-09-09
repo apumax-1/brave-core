@@ -85,6 +85,7 @@ test("brave_unit_tests") {
   sources = [
     "../../components/domain_reliability/test_util.cc",
     "../../components/domain_reliability/test_util.h",
+    "//brave/app/brave_main_delegate_unittest.cc",
     "//brave/browser/brave_content_browser_client_unittest.cc",
     "//brave/browser/brave_resources_util_unittest.cc",
     "//brave/browser/browsing_data/brave_browsing_data_remover_delegate_unittest.cc",
