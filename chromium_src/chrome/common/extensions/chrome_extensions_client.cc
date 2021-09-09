@@ -18,7 +18,7 @@ namespace extensions {
 namespace {
 
 std::string ParseUpdateUrlHost(std::string options) {
-   std::vector<std::string> flags = base::SplitString(
+  std::vector<std::string> flags = base::SplitString(
       options, ",", base::KEEP_WHITESPACE, base::SPLIT_WANT_NONEMPTY);
 
   for (const auto& flag : flags) {
@@ -27,7 +27,7 @@ std::string ParseUpdateUrlHost(std::string options) {
     }
 
     std::vector<std::string> values = base::SplitString(
-      flag, "=", base::KEEP_WHITESPACE, base::SPLIT_WANT_NONEMPTY);
+        flag, "=", base::KEEP_WHITESPACE, base::SPLIT_WANT_NONEMPTY);
 
     if (values.size() != 2) {
       continue;
@@ -48,8 +48,8 @@ std::string ParseUpdateUrlHost(std::string options) {
 
 void ChromeExtensionsClient::InitializeWebStoreUpdateURL() {
   auto* command_line = base::CommandLine::ForCurrentProcess();
-  webstore_update_url_ = GURL(
-      ParseUpdateUrlHost(command_line->GetSwitchValueASCII(switches::kComponentUpdater)));
+  webstore_update_url_ = GURL(ParseUpdateUrlHost(
+      command_line->GetSwitchValueASCII(switches::kComponentUpdater)));
 }
 
 const GURL& ChromeExtensionsClient::GetWebstoreUpdateURL() const {

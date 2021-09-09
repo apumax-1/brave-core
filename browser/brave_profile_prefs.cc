@@ -406,9 +406,6 @@ void RegisterProfilePrefs(user_prefs::PrefRegistrySyncable* registry) {
   registry->SetDefaultPrefValue(prefs::kEnableMediaRouter, base::Value(false));
 
   RegisterProfilePrefsForMigration(registry);
-
-  registry->SetDefaultPrefValue(prefs::kEnableMediaRouter,
-                                base::Value(false));
 }
 
 }  // namespace brave
