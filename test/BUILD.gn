@@ -85,7 +85,6 @@ test("brave_unit_tests") {
   sources = [
     "../../components/domain_reliability/test_util.cc",
     "../../components/domain_reliability/test_util.h",
-    "//brave/app/brave_main_delegate_unittest.cc",
     "//brave/browser/brave_content_browser_client_unittest.cc",
     "//brave/browser/brave_resources_util_unittest.cc",
     "//brave/browser/browsing_data/brave_browsing_data_remover_delegate_unittest.cc",
@@ -110,7 +109,6 @@ test("brave_unit_tests") {
     "//brave/chromium_src/services/network/public/cpp/cors/cors_unittest.cc",
     "//brave/common/brave_content_client_unittest.cc",
     "//brave/components/assist_ranker/ranker_model_loader_impl_unittest.cc",
-    "//brave/components/brave_component_updater/browser/brave_component_unittest.cc",
     "//brave/components/brave_perf_predictor/browser/bandwidth_linreg_unittest.cc",
     "//brave/components/brave_perf_predictor/browser/bandwidth_savings_predictor_unittest.cc",
     "//brave/components/brave_perf_predictor/browser/named_third_party_registry_unittest.cc",
