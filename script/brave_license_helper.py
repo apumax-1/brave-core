@@ -23,6 +23,7 @@ def AddBraveCredits(prune_paths, special_cases, prune_dirs, additional_paths):
         os.path.join('brave', 'vendor', 'bat-native-ledger'),
         os.path.join('brave', 'vendor', 'brave-ios'),
         os.path.join('brave', 'vendor', 'brave_base'),
+        os.path.join('brave'), 'vendor', 'google_ads'),
 
         # Brave overrides to third-party code, also covered by main notice.
         os.path.join('brave', 'third_party', 'android_deps'),
